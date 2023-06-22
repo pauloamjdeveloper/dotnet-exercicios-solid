@@ -6,9 +6,18 @@ internal class Program
     {
         Console.WriteLine("********** Exercício 1 **********");
 
-        var cliente = LocalizaCliente.ProcuraPorNome("Paulo");
+        var resultado = Cliente.ObterListaDeClientes();
+        Console.WriteLine();
 
-        Console.WriteLine(cliente?.Nome ?? "Não localizado");
+        try
+        {
+            ExportarDados.ExportarArquivo(resultado);
+            Console.WriteLine("Gerando arquivo com lista de clientes!");
+        }
+        catch (Exception exception)
+        {
+            Console.WriteLine($"Erro ao gerar arquivo com lista de Clientes: {exception}");
+        }
 
         Console.ReadLine();
     }
