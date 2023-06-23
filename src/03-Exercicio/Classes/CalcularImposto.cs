@@ -1,21 +1,12 @@
-﻿namespace _03_Exercicio.Classes
+﻿using _03_Exercicio.Interfaces;
+
+namespace _03_Exercicio.Classes
 {
     public class CalcularImposto
     {
-        public static decimal Calcular(decimal valor, decimal deducao, string pais)
+        public decimal Calcular(ICalcularImpostoPais calcularImpostoPais)
         {
-            decimal valorImposto = 0;
-            decimal valorBase = valor - deducao;
-            switch (pais)
-            {
-                case "Brazil":
-                    break;
-                case "USA":
-                    break;
-                case "UK":
-                    break;
-            }
-            return valorImposto;
+            return calcularImpostoPais.CalcularValorImposto();
         }
     }
 }
