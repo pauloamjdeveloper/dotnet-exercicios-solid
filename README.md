@@ -40,6 +40,16 @@ Foi criada a classe `FileLogger` para receber uma implementação da interface `
 
 Com isso foi aplicado o uso do `DIP — Dependency Inversion Principle`, dessa forma foi utilizado o padrão da injeção de dependência para definir o uso da inversão da dependência.
 
+### :book: Exercício 3
+
+### **Cenário**
+
+No desenvolvimento de uma calculadora on-line de impostos os usuários podem visitar uma página web e especificar suas receitas, deduções e calcular o imposto a pagar.
+
+Para isso foi criada a classe `CalcularImposto` e definiu o método `Calcular()` que usa como parâmetros `Valor`, `Dedução` e o `Pais` do usuário, no qual para cada pais existe uma regra para calcular o imposto.
+
+O método `Calcular()` determina o valor do imposto subtraindo o valor da renda das deduções totais obtendo o valorBase para o cálculo, conforme o pais do usuário é selecionado, a regra para calcular o imposto é retornado na variável valorImposto.
+
 ## :wrench: Recursos Utilizados
 
 - [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
