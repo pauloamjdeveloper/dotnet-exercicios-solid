@@ -26,6 +26,20 @@ Dessa forma é aplicado o uso do `SRP — Single Responsibility Principle`, onde
 
 <hr>
 
+### :book: [Exercício 2](https://github.com/pauloamjdeveloper/dotnet-exercicios-solid/tree/master/src/02-Exercicio)
+
+### **Cenário**
+
+Em um hipotético sistema de `Vendas` temos uma classe `Pedido` que entre outras tarefas faz a inclusão do pedido usando o método `AdicionarPedido()` no qual é feito o registro no console da inclusão do pedido e das ocorrências de erros usando a classe `ConsoleLogger`, o sistema também deverá implementar o registro de log em arquivo de texto além do console.
+
+### **Solução**
+
+A classe `Pedido` fazia uso de um forte acoplamento onde tinha a criação de uma instância da classe `ConsoleLogger` para fazer o registro do log no console, uma solução proposta para esse problema foi a criação da interface `ILogger` removendo essa dependência.
+
+Foi criada a classe `FileLogger` para receber uma implementação da interface `ILogger`, nesta classe foi definido um caminho para onde o arquivo de log será salvo, fazendo com que a classe `Pedido` tenha os dados registrados nesse arquivo.
+
+Com isso foi aplicado o uso do `DIP — Dependency Inversion Principle`, dessa forma foi utilizado o padrão da injeção de dependência para definir o uso da inversão da dependência.
+
 ## :wrench: Recursos Utilizados
 
 - [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
