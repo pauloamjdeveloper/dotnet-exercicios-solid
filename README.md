@@ -60,12 +60,18 @@ que deverá ser implementado por classes concretas para o cálculo do imposto pa
 
 <hr>
 
-### :book: Exercício 4
+### :book: [Exercício 4](https://github.com/pauloamjdeveloper/dotnet-exercicios-solid/tree/master/src/04-Exercicio)
 
 Uma loja pretende aplicar uma política de descontos no preço dos seus produtos bem agressiva, onde cada produto poderá de acordo com as datas especiais do calendário
 (dia das mães, dia dos pais, dia das crianças, páscoa, natal etc...) ter um preço promocional, neste cenário teríamos para cada data um tipo de desconto diferente que deverá ser implementado de forma separada.
 
+### **Solução**
 
+Para resolver esse problema foi criada a classe abstrata `Produto` para servir como base dos produtos definindo as propriedades `Nome` e `Preço`, houve a adição das classes `Perfume` e `Celular` para representação dos produtos recebendo a implementação da classe `Produto`.
+
+Nesse exercício foi feito uso dos principios `SRP`, `OCP`, `DIP`e `ISP - Interface Segregation Principle`, foi adicionada a interface `IPromocao` com o método `Desconto()`, essa interface foi implementada em cada classe concreta destinada a uma data comemorativa com o objetivo de aplicar descontos especificos para cada uma dessas datas.
+
+<hr>
 
 ## :wrench: Recursos Utilizados
 
