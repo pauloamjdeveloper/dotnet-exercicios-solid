@@ -60,6 +60,13 @@ que deverá ser implementado por classes concretas para o cálculo do imposto pa
 
 <hr>
 
+### :book: Exercício 4
+
+Uma loja pretende aplicar uma política de descontos no preço dos seus produtos bem agressiva, onde cada produto poderá de acordo com as datas especiais do calendário
+(dia das mães, dia dos pais, dia das crianças, páscoa, natal etc...) ter um preço promocional, neste cenário teríamos para cada data um tipo de desconto diferente que deverá ser implementado de forma separada.
+
+
+
 ## :wrench: Recursos Utilizados
 
 - [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
