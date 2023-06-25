@@ -73,6 +73,15 @@ Nesse exercício foi feito uso dos principios `SRP`, `OCP`, `DIP`e `ISP - Interf
 
 <hr>
 
+### :book: Exercício 5
+
+### **Cenário**
+
+Em um sistema voltado a uma pizzaria é utilizada a classe `Pizzaria` que é responsável por informações destinadas a criação de pizzas usando o método `CriarPizza()`,
+no qual recebe uma `string` para indicar o tipo da pizza que deverá ser criado.
+
+Nesse sistema foi identificado problemas como `Forte Acoplamento`, as violações do `DRY - Don’t Repeat Yourself`, `DIP` e o `OCP` na classe `Pizzaria`.
+
 ## :wrench: Recursos Utilizados
 
 - [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
