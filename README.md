@@ -88,10 +88,10 @@ Foi criada a classe abstrata `Pizza` para representar uma classe base que recebe
 
 A classe `PizzaFactory` foi adicionada com o proposito de encapsular o objeto responsável pela criação das pizzas usando o método `CriarPizza(string tipo)`, isso permite a adição de novas classes para a criação das pizzas na medida que o projeto for crescendo, a lógica voltada para a criação das pizzas na classe `Pizza` passa a ser utilizada na classe `PizzaFactory` desacoplando o código.
 
-## :wrench: Recursos Utilizados
+## ✔️ Recursos Utilizados
 
-- [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
-- [C#](https://learn.microsoft.com/pt-br/dotnet/csharp/)
+- ``.NET 6.0``
+- ``C#``
 
 ## :floppy_disk: Clonar Repositório
 
