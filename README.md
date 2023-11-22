@@ -1,8 +1,13 @@
 <h1 align="center">Exercícios SOLID</h1>
 
+<p align="center">
+  <a href="https://learn.microsoft.com/pt-br/dotnet/"><img alt="DotNet 6" src="https://img.shields.io/badge/.NET-5C2D91?logo=.net&logoColor=white&style=for-the-badge" /></a>
+  <a href="https://learn.microsoft.com/pt-br/dotnet/csharp/programming-guide/"><img alt="C#" src="https://img.shields.io/badge/C%23-239120?logo=c-sharp&logoColor=white&style=for-the-badge" /></a>
+</p>
+
 ## :computer: Projeto
 
-Projeto console application para implementação de exercícios utilizando boas práticas e os princípios do SOLID, os exercícios foram propostos no curso [C# - Aplicando Princípios SOLID na prática](https://www.udemy.com/course/c-aplicando-principios-solid-na-pratica/).  
+Repositório com implementações de uma lista de exercícios utilizando boas práticas e os princípios do `SOLID`, os exercícios foram propostos no curso [C# - Aplicando Princípios SOLID na prática](https://www.udemy.com/course/c-aplicando-principios-solid-na-pratica/).  
 
 ## :blue_book: Lista de Exercícios
 
@@ -88,14 +93,23 @@ Foi criada a classe abstrata `Pizza` para representar uma classe base que recebe
 
 A classe `PizzaFactory` foi adicionada com o proposito de encapsular o objeto responsável pela criação das pizzas usando o método `CriarPizza(string tipo)`, isso permite a adição de novas classes para a criação das pizzas na medida que o projeto for crescendo, a lógica voltada para a criação das pizzas na classe `Pizza` passa a ser utilizada na classe `PizzaFactory` desacoplando o código.
 
+## :white_check_mark: Decisões Técnicas
+
+Procurei seguir com as mesmas ideias que foram apresentadas durante exemplos no curso, os exercícios respondidos são apenas simulações para o aprendizado dos princípios do `SOLID`.
+
 ## ✔️ Recursos Utilizados
 
 - ``.NET 6.0``
+- ``Console.application``
 - ``C#``
 
 ## :floppy_disk: Clonar Repositório
 
-```git clone https://github.com/pauloamjdeveloper/dotnet-exercicios-solid.git```
+```bash
+git clone https://github.com/pauloamjdeveloper/dotnet-exercicios-solid.git
+```
 
-## Author
-:boy: [Paulo Alves](https://github.com/pauloamjdeveloper)
+## :boy: Author
+
+<a href="https://github.com/pauloamjdeveloper"><img src="https://avatars.githubusercontent.com/u/137198048?v=4" width=70></a>
+[Paulo Alves](https://github.com/pauloamjdeveloper)
